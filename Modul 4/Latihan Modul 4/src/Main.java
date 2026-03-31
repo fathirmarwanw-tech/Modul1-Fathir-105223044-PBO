@@ -3,14 +3,14 @@ class MesinKopi {
     int air;  // ml
     int susu; // ml
 
-    // constructor default (Soal 4)
+    // Soal 4
     MesinKopi() {
         this.kopi = 0;
         this.air = 0;
         this.susu = 0;
     }
 
-    // isi ulang bahan (Soal 2)
+    // Soal 2
     void isiUlangBahan(int kopi, int air, int susu) {
         this.kopi += kopi;
         this.air += air;
@@ -19,7 +19,7 @@ class MesinKopi {
         System.out.println("Bahan berhasil diisi ulang.");
     }
 
-    // cek cappuccino (Soal 3)
+    // Soal 3
     boolean cekKetersediaanCappuccino() {
         if (kopi >= 15 && air >= 50 && susu >= 100) {
             return true;
